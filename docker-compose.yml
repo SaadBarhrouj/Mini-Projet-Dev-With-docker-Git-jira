@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+
+  nginx-service:
+    image: nginx:stable-alpine
+    container_name: nginx-container
+    ports:
+        - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+  php-service:
+    image: kihlyouns/php-service:latest
+    container_name: php-container
+
+  mysql-service:
+    image: mysql:8
+    container_name: mysql-container
+    environment:     
+      MYSQL_USER: user
+      MYSQL_DATABASE: db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: secret
+    volumes:
+      - db:/var/lib/mysql
+
+  phpmyadmin-service:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-container
+    environment:
+      PMA_HOST: mysql-service
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8081:80"
+
+  laravel-service:
+    image: kihlyouns/laravel-service:latest
+    container_name: laravel-container
+    ports:
+        - "8000:8000" 
+
+  angular-service:
+    image: kihlyouns/angular-service:latest    
+    container_name: angular-container
+    ports:
+        - "4200:4200" 
+    command: npm start        
+
+volumes:
+  db:
