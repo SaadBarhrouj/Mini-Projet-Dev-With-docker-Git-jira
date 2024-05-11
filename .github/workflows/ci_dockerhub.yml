@@ -24,7 +24,7 @@ jobs:
 
       - name: Build and push Docker image
         env:
-          REPOSITORY: saadbarhrouj/php_laravel_angular
+          REPOSITORY: mohamedamineaitjaakike/php_laravel_angular
           IMAGE_TAG: SE
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/$REPOSITORY:$IMAGE_TAG ./configuration
