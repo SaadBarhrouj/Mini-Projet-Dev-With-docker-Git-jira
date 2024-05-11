@@ -26,9 +26,9 @@ Created using the README generator
 <h3 align="left" style="color: #0066cc;">Équipe</h3>
 <hr>
 <ul>
-  <li><strong style="color: #0066cc;">Chef de projet</strong>: MOHAMED AMINE AIT JAAKIKE</li>
+  <li><strong style="color: #0066cc;">Chef de projet</strong>:SAAD BARHROUJ</li>
   <li><strong style="color: #0066cc;">Responsable de développement</strong>: AIT BRAHIM LINA</li>
-  <li><strong style="color: #0066cc;">Responsable GitHub et déploiement</strong>: SAAD BARHROUJ</li>
+  <li><strong style="color: #0066cc;">Responsable GitHub et déploiement</strong>:  MOHAMED AMINE AIT JAAKIKE</li>
   <li><strong style="color: #0066cc;">Responsable de l'environnement Docker et BDD</strong>: DOUAE AZIBOU</li>
 </ul>
 <h3 align="left" style="color: #0066cc;">Installation</h3>
