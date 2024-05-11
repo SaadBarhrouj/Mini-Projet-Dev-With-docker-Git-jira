@@ -4,12 +4,10 @@ name: Build and Push Docker Image
 on:
   push:
     branches: [main]
-    paths:
-      - 'configuration/Dockerfile'
+   
   pull_request:
     branches: [main]
-    paths:
-      - 'configuration/Dockerfile'
+  
 
 jobs:
   build-and-push:
