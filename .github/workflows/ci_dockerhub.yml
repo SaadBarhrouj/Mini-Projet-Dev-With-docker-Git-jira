@@ -19,13 +19,13 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: mohamedamineaitjaakike
-          password: dckr_pat_wW-SC1U9HQbMYZ4Y3t443pflKoM
+          username: saadbarhrouj
+          password: dckr_pat_4729yU5bCn_BE3zx_inOjtD0ams
 
       - name: Build and push Docker image
         env:
-          REPOSITORY: mohamedamineaitjaakike/php_laravel_angular
-          IMAGE_TAG: latest
+          REPOSITORY: saadbarhrouj/php_laravel_angular
+          IMAGE_TAG: SE
         run: |
-          docker build -t mohamedamineaitjaakike/php_laravel_angular:latest ./configuration
-          docker push  mohamedamineaitjaakike/php_laravel_angular:latest
+          docker build -t saadbarhrouj/php_laravel_angular:SE ./configuration
+          docker push  saadbarhrouj/php_laravel_angular:SE
