@@ -9,9 +9,6 @@ RUN apt-get update && apt-get install -y \
 
 # Installation de Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-# Installation de Node.js
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-
 # Installez Node.js et npm
 RUN apt-get update && apt-get install -y nodejs npm
 # Installation d'Angular CLI
