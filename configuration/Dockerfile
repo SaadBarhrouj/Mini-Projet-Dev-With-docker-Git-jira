@@ -22,3 +22,4 @@ RUN composer global require laravel/installer
 
 # Exposer le port 80 pour Apache
 EXPOSE 80
+     
