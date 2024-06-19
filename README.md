@@ -8,6 +8,7 @@ Created using the README generator
 <p align="center">
   <img src="https://example.com/your-image.gif" alt="GIF de votre projet" width="300" height="300" />
 </p>
+
 <hr>
 <h3 align="left" style="color: #0066cc;">Défi</h3>
 <hr>
